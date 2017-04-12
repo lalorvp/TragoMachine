@@ -1,0 +1,46 @@
+<ion-view view-title="main">
+  <ion-content>
+
+        <div class="list">
+
+          <label class="item item-input item-select">
+            <div class="input-label">
+              INTENSIDAD
+            </div>
+            <select ng-model="opciones.intensidad">
+              <option value="A">Suave</option>
+              <option value="B">Trepador</option>
+              <option value="C">Brutal</option>
+            </select>
+          </label>
+
+          <label class="item item-input item-select">
+            <div class="input-label">
+              OCACIÓN
+            </div>
+            <select ng-model="opciones.ocacion">
+              <option value="1">Previos</option>
+              <option value="2">En pareja</option>
+              <option value="3">Reu</option>
+              <option value="4">Juergaza</option>
+            </select>
+          </label>
+
+          <label class="item item-input item-select">
+            <div class="input-label">
+              DIFICULTAD
+            </div>
+            <select ng-model="opciones.dificultad">
+              <option value="X"> Relajado</option>
+              <option value="Y">Simple/extremo</option>              
+            </select>
+          </label>
+
+          <a class="button icon-right ion-chevron-right button-calm ion-wineglass" 
+          href="preparar(opciones.intensidad,opciones.ocacion, opciones.dificultad)">PREPARAR</a>
+
+        </div>
+
+      </ion-content>
+  </ion-content>
+</ion-view>
